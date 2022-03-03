@@ -1,9 +1,9 @@
-const Home = () => './components/Home.vue'
-const Contacto = () => './components/Contacto.vue'
+const Home = () => import('./components/Home.vue')
+const Contacto = () => import('./components/Contacto.vue')
 
-const Mostrar = () => './components/blog/Mostrar.vue'
-const Crear = () => './components/blog/Crear.vue'
-const Editar = () => './components/blog/Editar.vue'
+const Mostrar = () => import('./components/blog/Mostrar.vue')
+const Crear = () => import('./components/blog/Crear.vue')
+const Editar = () => import('./components/blog/Editar.vue')
 
 export const routes = [
     {
@@ -18,7 +18,7 @@ export const routes = [
     },
     {
         name:'mostrarBlog',
-        path:'/mostrar',
+        path:'/blogs',
         component:Mostrar
     },
     {

@@ -7,7 +7,7 @@ import VueAxios from 'vue-axios';
 import axios from 'axios';
 //se importa y se configura el Vue Router
 import VueRouter from 'vue-router';
-import { routes } from './routes';
+import { routes } from './routes.js';
 
 import Vue from 'vue';
 Vue.use(VueRouter);
